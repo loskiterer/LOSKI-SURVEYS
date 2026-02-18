@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Survey Rewards</title>
+    <style>
+        :root {
+            --primary-color: #00c853; /* AttaPoll-style Green */
+            --bg-color: #f4f7f6;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+        }
+
+        /* Navbar */
+        nav {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        /* Profile Card */
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .balance-label {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .balance-amount {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+
+        /* Survey List */
+        .survey-item {
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+            cursor: pointer;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .survey-item:hover {
+            transform: scale(1.02);
+        }
+
+        .survey-info h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .survey-info p {
+            margin: 5px 0 0;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .reward {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* Action Buttons */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1rem;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .logout-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>My Survey Account</nav>
+
+<div class="container">
+    <div class="card">
+        <div class="balance-label">Current Balance</div>
+        <div class="balance-amount">$12.45</div>
+        <button class="btn">Withdraw Rewards</button>
+    </div>
+
+    <h3>Available Surveys</h3>
+
+    <div class="survey-item">
+        <div class="survey-info">
+            <h4>Consumer Habits Study</h4>
+            <p>⏱ 5 Minutes</p>
+        </div>
+        <div class="reward">+$0.75</div>
+    </div>
+
+    <div class="survey-item">
+        <div class="survey-info">
+            <h4>Technology Trends 2024</h4>
+            <p>⏱ 12 Minutes</p>
+        </div>
+        <div class="reward">+$1.50</div>
+    </div>
+
+    <div class="survey-item">
+        <div class="survey-info">
+            <h4>Quick Daily Poll</h4>
+            <p>⏱ 1 Minute</p>
+        </div>
+        <div class="reward">+$0.10</div>
+    </div>
+
+    <a href="#" class="logout-link">Logout from Account</a>
+</div>
+
+</body>
+</html>
